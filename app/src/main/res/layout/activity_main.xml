@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:background="#00B0FF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/papericon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/outputNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00B0FF"
+            android:fadeScrollbars="false"
+            android:fontFamily="@font/adamina"
+            android:maxLines="20"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#0B0202"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/inputNum"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/border"
+            android:hint="Grades"
+            android:inputType="numberDecimal"
+            android:lines="15"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/addBTN"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/square"
+            android:layout_marginLeft="5dp"
+            android:text="ADD" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/showBTN"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:background="@drawable/square"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="SHOW" />
+
+        <Button
+            android:id="@+id/delBTN"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:background="@drawable/square"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="DEL" />
+
+        <Button
+            android:id="@+id/clearBTN"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:background="@drawable/square"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="CLEAR" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
